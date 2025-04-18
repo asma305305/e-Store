@@ -6,7 +6,7 @@ JavaScript,
 and PHP**
 It features a dynamic product catalog, interactive shopping cart, and basic user authentication. 
 
-#Features: 
+# Features: 
 - Responsive front-end interface with clean UI/UX
 - Product listing with dynamic item display
 - Add-to-cart functionality using JavaScript
@@ -22,7 +22,7 @@ It features a dynamic product catalog, interactive shopping cart, and basic user
 - **Back-End:** PHP  
 - **Sessions:** Used for managing cart state across pages  
 
-#Getting Started
+# Getting Started
 1. Clone the repository
 2. Start a PHP server
 3. Checkout the Store online in your browser. 
