@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Altumi's Clothing Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="auth-and-cart">
+            <a href="signup.html" class="header-button">Sign Up</a>
+            <a href="signin.html" class="header-button">Sign In</a>
+            <a href="cart.html" class="header-button">Cart <span id="cart-count"></span></a>
+        </div>
+
+        <div class="branding">
+            <img src="images/Logo.png" alt="Altumi's Clothing Store Logo" class="logo">
+        </div>
+    </header>
+    <div id="signInPromptModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Enjoying what you see?</p>
+            <div class="modal-actions">
+                <a href="signin.html" class="modal-btn">Sign In</a>
+                <a href="signup.html" class="modal-btn">Sign Up</a>
+                <button class="logout-btn" style="display:none;" onclick="logout()">Logout</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <main class="container">
+        <div class="welcome-message">
+            <h1>Welcome to Altumi's Retail</h1>
+        </div>
+
+        <div class="items-container">
+            <div class="item" data-item-id="4717" data-item-name="Elegant Longline tee" data-item-price="15.99">
+                <img src="images/4717.jpg" alt="Elegant Longline T-shirt">
+                <h2>Elegant Longline Tee</h2>
+                <p>$15.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="item" data-item-id="4718" data-item-name="Vibrant Yellow Casual Tee" data-item-price="15.99">
+                <img src="images/4718.jpg" alt="Vibrant Yellow Casual T-shirt">
+                <h2>Vibrant Yellow Casual Tee</h2>
+                <p>$15.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="item" data-item-id="4719" data-item-name="Classic White T-shirt" data-item-price="15.99">
+                <img src="images/4719.jpg" alt="Classic White T-shirt">
+                <h2>Classic White Tee</h2>
+                <p>$15.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="item" data-item-id="4720" data-item-name="Chic Short Pint T-shirt" data-item-price="10.99">
+                <img src="images/4720.jpg" alt="Chic Short Pint T-shirt">
+                <h2>Chic Short Pint Tee</h2>
+                <p>$10.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="item" data-item-id="4722" data-item-name="Sky Blue Summer T-shirt" data-item-price="12.99">
+                <img src="images/4722.jpg" alt="Sky Blue Summer T-shirt">
+                <h2>Sky Blue Summer Tee</h2>
+                <p>$12.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="item" data-item-id="4723" data-item-name="Classic Blue Denim T-shirt" data-item-price="10.99">
+                <img src="images/4723.jpg" alt="Classic Blue Denim T-shirt">
+                <h2>Classic Blue Denim Tee</h2>
+                <p>$10.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="item" data-item-id="4724" data-item-name="Yellow Striped Fashion T-shirt" data-item-price="20.99">
+                <img src="images/4724.jpg" alt="Yellow Striped Fashion T-shirt">
+                <h2>Yellow Striped Fashion Tee</h2>
+                <p>$20.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="item" data-item-id="5413" data-item-name="Pink & White Striped T-shirt" data-item-price="12.99">
+                <img src="images/5413.jpg" alt="Pink & White Striped T-shirt">
+                <h2>Pink & White Striped Tee</h2>
+                <p>$12.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="item" data-item-id="5415" data-item-name="Bold Red Statement T-shirt" data-item-price=" 10.99 ">
+                <img src="images/5415.jpg " alt="Bold Red Statement T-shirt ">
+                <h2>Bold Red Statement Tee</h2>
+                <p>$10.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="5418 " data-item-name="Soft Pink Weekend T-shirt" data-item-price=" 10.99 ">
+                <img src="images/5418.jpg " alt="Soft Pink Weekend T-shirt ">
+                <h2>Soft Pink Weekend Tee</h2>
+                <p>$10.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="5428 " data-item-name="Pure White Everyday T-shirt" data-item-price=" 10.99 ">
+                <img src="images/5428.jpg " alt="Pure White Everyday T-shirt ">
+                <h2>Pure White Everyday Tee</h2>
+                <p>$10.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="5438 " data-item-name="Baby Blue Spring T-shirt" data-item-price=" 10.99 ">
+                <img src="images/5438.jpg " alt="Baby Blue Spring T-shirt ">
+                <h2>Baby Blue Spring Tee</h2>
+                <p>$10.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="5441 " data-item-name="White & Purple Stripe T-shirt" data-item-price=" 20.99 ">
+                <img src="images/5441.jpg " alt="White & Purple Stripe T-shirt ">
+                <h2>White & Purple Stripe Tee</h2>
+                <p>$20.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="5444 " data-item-name="Olive Green Casual T-shirt" data-item-price=" 15.99 ">
+                <img src="images/5444.jpg " alt="Olive Green Casual T-shirt ">
+                <h2>Olive Green Casual Tee</h2>
+                <p>$15.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="5570 " data-item-name="Breezy Summer Dress" data-item-price=" 30.99 ">
+                <img src="images/5570.jpg " alt="Breezy Summer Dress ">
+                <h2>Breezy Summer Dress</h2>
+                <p>$30.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="5575 " data-item-name="Floral Spring Skirt" data-item-price=" 16.99 ">
+                <img src="images/5575.jpg " alt="Floral Spring Skirt ">
+                <h2>Floral Spring Skirt</h2>
+                <p>$16.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="8379 " data-item-name="Spring Bloom T-shirt" data-item-price=" 13.99 ">
+                <img src="images/8379.jpg " alt="Spring Bloom T-shirt ">
+                <h2>Spring Bloom Tee</h2>
+                <p>$13.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="8380 " data-item-name="Regal Purple T-shirt" data-item-price=" 10.99 ">
+                <img src="images/8380.jpg " alt="Regal Purple T-shirt ">
+                <h2>Regal Purple Tee</h2>
+                <p>$10.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-id="8382 " data-item-name="Athletic Purple T-shirt" data-item-price=" 20.99 ">
+                <img src="images/8382.jpg " alt="Athletic Purple T-shirt ">
+                <h2>Athletic Purple Tee</h2>
+                <p>$20.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+            <div class="item " data-item-name="2 cute tee " data-item-price=" 34.99 ">
+                <img src="images/5215.jpg " alt="2 cute tee ">
+                <h2>2 Cute Tee</h2>
+                <p>$34.99</p>
+                <button class="add-to-cart ">Add to Cart</button>
+            </div>
+        </div>
+
+    </main>
+    <script type="text/javascript " src="script.js "></script>
+
+</body>
+
+</html>
